@@ -1,95 +1,70 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Efulim Tekel</title>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@500&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body {
-      font-family: 'Noto Serif Display', serif;
-      color: white;
-      background: url('efulim-tekel.png') no-repeat center center fixed;
-      background-size: cover;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      padding-left: 5vw;
-    }
-
-    .header { /* NEW */
-      font-size: 48px;
-      font-weight: bold;
-      margin-bottom: 20px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    }
-
-    .content {
-      max-width: 400px;
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 20px;
-      border-radius: 12px;
-    }
-
-    .content h1 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-
-    .content p {
-      font-size: 18px;
-      margin-bottom: 25px;
-    }
-
-    .whatsapp-button {
-      display: inline-block;
-      background-color: #25D366;
-      color: white;
-      padding: 12px 20px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
-    }
-
-    .whatsapp-button:hover {
-      background-color: #1eb85c;
-    }
-
-    @media (max-width: 768px) {
-      body {
-        align-items: center;
-        padding: 20px;
-        text-align: center;
-      }
-
-      .header {
-        font-size: 36px;
-        text-align: center;
-      }
-
-      .content {
-        width: 100%;
-        max-width: none;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-  <div class="header">EFULİM TEKEL</div>
-  <div class="content">
-    <h1>Efulim Tekel’e Hoş Geldiniz</h1>
-    <p>WhatsApp üzerinden hızlı sipariş verin</p>
-    <a class="whatsapp-button" href="https://wa.me/905451556964" target="_blank">WhatsApp'tan Sipariş Ver</a>
-  </div>
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="site-title">EFULİM TEKEL</h1>
+      <div class="spacer"></div>
+
+      <p class="hero-subtext">
+        Sarıyer Büyükdere’deki Efulim Tekel, içki çeşitliliği ve güler yüzlü hizmetiyle semtin sevilen noktalarından
+        biridir.
+        Yerli ve ithal birçok içki markasını uygun fiyatlarla bulabilir, özel talepleriniz için bizimle doğrudan
+        iletişime geçebilirsiniz.
+      </p>
+      <div class="spacer"></div>
+
+      <div class="contact-buttons">
+        <a href="https://wa.me/905451556964" class="btn contact-btn" target="_blank" rel="noopener noreferrer">
+          💬 WhatsApp’tan Sipariş Ver
+        </a>
+        <a href="tel:+905451556964" class="btn contact-btn phone-btn" target="_blank" rel="noopener noreferrer">
+          📞 Telefonla Sipariş Ver
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="about">
+    <h2>Hakkımızda</h2>
+    <p>
+      Efulim Tekel, Sarıyer Büyükdere'de hizmet veren butik bir tekel bayisidir. Müşteri memnuniyetini ön planda
+      tutarak, kaliteli ürünleri hızlı şekilde ulaştırmayı hedefliyoruz. WhatsApp sipariş hattımızla hızlı teslimat
+      sağlayarak sizlere keyifli alışveriş deneyimi sunuyoruz.
+    </p>
+  </section>
+
+  <section class="map">
+    <h2>Adresimiz</h2>
+    <p>Büyükdere Mah. Çayırbaşı Caddesi No:132/B Sarıyer, İstanbul</p>
+    <iframe
+      src="https://www.google.com/maps?q=buyukdere+mah+%C3%A7ay%C4%B1rba%C5%9F%C4%B1+caddesi+no:132/B+sariyer+istanbul&output=embed"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+
+  <section class="gallery">
+    <h2>Fotoğraf Galerisi</h2>
+    <div class="gallery">
+      <img src="gallery1.jpg" alt="Efulim Tekel Görsel 1" />
+      <img src="gallery2.jpg" alt="Efulim Tekel Görsel 2" />
+      <img src="gallery3.jpg" alt="Efulim Tekel Görsel 3" />
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <p>&copy; 2025 Efulim Tekel. Tüm hakları saklıdır.</p>
+  </footer>
 </body>
+
 </html>
